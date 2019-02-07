@@ -1,0 +1,91 @@
+/* CLASSES FOR CARDS AND HEADING STYLING */
+.bgr{
+    background-color:#4CAF50 ;
+    color: white;
+}
+.bor{
+    background-color:rgb(255, 180, 0) ;
+    color: white;
+}
+.bbl{
+    background-color:#03A9F4 ;
+    color: white;
+}
+.bpr{
+    background-color:rgba(88, 26, 124, 0.918) ;
+    color: white;
+}
+.brd{
+    background-color:#F44336 ;
+    color: white;
+}
+.blg{
+    background-color:#DCEDC8 ;
+    color: #386700;
+}
+.blo{
+    background-color:#FFECB3 ;
+    color: #F57C00;
+}
+.blb{
+    background-color:#E1F5FE ;
+    color: #1976D2;
+}
+.blr{
+    background-color:#FFEBEE ;
+    color: #B71C1C;
+}
+.bsl{
+    background-color:#fffbdb ;
+    color: #4f7688;
+}
+.brgr{
+    background-color:white;
+    border-left:10px solid #4CAF50 ;
+    color: #4CAF50;
+}
+.bror{
+    background-color:white;
+    border-left:10px solid rgb(255, 180, 0) ;
+    color: rgb(255, 180, 0);
+}
+.brbl{
+    background-color:white;
+    border-left:10px solid #03A9F4 ;
+    color: #03A9F4;
+}
+.brpr{
+    background-color:white;
+    border-left:10px solid rgba(88, 26, 124, 0.918) ;
+    color: rgba(88, 26, 124, 0.918);
+}
+.brrd{
+    background-color:white;
+    border-left:10px solid #F44336 ;
+    color: #F44336;
+}
+.brlg{
+    background-color:white;
+    border-left:10px solid #DCEDC8 ;
+    color: #386700;
+}
+.brlo{
+    background-color:white;
+    border-left:10px solid #FFECB3 ;
+    color: #F57C00;
+}
+.brlb{
+    background-color:white;
+    border-left:10px solid #E1F5FE ;
+    color: #1976D2;
+}
+.brlr{
+    background-color:white;
+    border-left:10px solid #FFEBEE ;
+    color: #B71C1C;
+}
+.brsl{
+    background-color:white;
+    border-left:10px solid #fffbdb ;
+    color: #4f7688;
+}
