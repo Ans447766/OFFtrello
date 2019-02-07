@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)file:///home/uns/Desktop/trelloOFFLINE/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-wclassth, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TRELLO OFFLINE</title>
+    <link rel="stylesheet" href="./trelloOFFLINE/style.css">
+    <script type="text/javascript" src="./trelloOFFLINE/jquery.min.js"></script>
+    <script type="text/javascript" src="./trelloOFFLINE/javascript.js"></script>
+</head>  
+<body><div id="mySidenav" class="sidenav">
+    <div style="width:800px;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <h1>BOARDS</h1>
+        <a id="bln" target="_blank" title='works only OFFLINE use ctrl+s for save' href="trelloOFFLINE.html">ADD NEW BOARD v1</a>
+        <h1>SOFTWERE</h1>
+        <a href="#">SETTINGS NOT DEVELOPED YET</a>
+        <a href="#">THEMES NOT DEVELOPED YET</a>
+        <h1>DEVELOPER</h1>
+        <a href="https://github.com/Ans447766">About</a>
+        <a href="https://web.facebook.com/ans.ishtiaq.167">Contact</a>
+    </div>
+</div>
+<!-- Use any element to open the sidenav -->
+<div style="position: fixed;width:100%;top:0px;margin-bottom:10px;background-color: rgba(0, 0, 0, 0.192);left:0px;">
+    <span onclick="openNav()" style="position: absolute;;color:white;padding:10px;font-weight:bold;font-size: 30px;top:-5px;">MENU</span>
+    <span class="bname" contenteditable="true">NEW BOARD</span>
+</div>
+<br>
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+    
+    <div class="span" ondrop="drop(event)" ondragover="allowDrop(event)" id='span0'>
+        <div draggable="true" ondragstart="drag(event)" class="list">
+            <h1 spellcheck="false" contenteditable="true">TODO's</h1>
+            <div class="mm" ondrop="drop(event)" ondragover="allowDrop(event)" id="div1">
+            </div>
+            <span class="newCard" contenteditable="true">+ ADD NEW CARD</span>
+        </div>
+        <div draggable="true" ondragstart="drag(event)" class="list">
+            <h1 spellcheck="false" contenteditable="true">UNDER PROGRESS</h1>
+            <div class="mm" ondrop="drop(event)" ondragover="allowDrop(event)" id="div2">
+            </div>
+            <span spellcheck="false" class="newCard" contenteditable="true">+ ADD NEW CARD</span>
+        </div>
+        <div draggable="true" ondragstart="drag(event)" class="list">
+            <h1 spellcheck="false" contenteditable="true">COMPLETED</h1>
+            <div class="mm" ondrop="drop(event)" ondragover="allowDrop(event)" id="div3">
+            </div>
+            <span spellcheck="false" class="newCard" contenteditable="true">+ ADD NEW CARD</span>
+        </div>
+        <div class="nlist" contenteditable="true">
+            ADD NEW LIST
+        </div>
+    </div>
+    
+</div>
+</body>
+
+</html>
