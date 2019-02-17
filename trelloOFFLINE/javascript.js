@@ -37,7 +37,6 @@ function drop(ev) {
         ev.target.before(document.getElementById(data));
     }else if(ev.target.id.includes('delme')){
         document.getElementById(data).remove();
-        // console.log("executing");
     }
 }
 $(document).ready(function(){
