@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- saved from url=(0052)file:///home/uns/Desktop/trelloOFFLINE/index.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+
     <meta name="viewport" content="width=device-wclassth, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TRELLO OFFLINE</title>
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./trelloOFFLINE/StarTags.css">
     <script type="text/javascript" src="./trelloOFFLINE/jquery.min.js"></script>
     <script type="text/javascript" src="./trelloOFFLINE/javascript.js"></script>
-</head>  
+</head>
 <body><div id="mySidenav" class="sidenav">
     <div style="width:800px;">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
@@ -31,22 +31,22 @@
 <br>
 <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
 <div id="main">
-    
+
     <div class="span" ondrop="drop(event)" ondragover="allowDrop(event)" id='span0'>
         <div draggable="true" ondragstart="drag(event)" class="list">
-            <h1 spellcheck="false" contenteditable="true">TODO's</h1>
+            <h1 id='lhed1' spellcheck="false" contenteditable="true">TODO's</h1>
             <div class="mm" ondrop="drop(event)" ondragover="allowDrop(event)" id="div1">
             </div>
             <span class="newCard" contenteditable="true">+ ADD NEW CARD</span>
         </div>
         <div draggable="true" ondragstart="drag(event)" class="list">
-            <h1 spellcheck="false" contenteditable="true">UNDER PROGRESS</h1>
+            <h1 id='lhed2' spellcheck="false" contenteditable="true">UNDER PROGRESS</h1>
             <div class="mm" ondrop="drop(event)" ondragover="allowDrop(event)" id="div2">
             </div>
             <span spellcheck="false" class="newCard" contenteditable="true">+ ADD NEW CARD</span>
         </div>
         <div draggable="true" ondragstart="drag(event)" class="list">
-            <h1 spellcheck="false" contenteditable="true">COMPLETED</h1>
+            <h1 id='lhed3' spellcheck="false" contenteditable="true">COMPLETED</h1>
             <div class="mm" ondrop="drop(event)" ondragover="allowDrop(event)" id="div3">
             </div>
             <span spellcheck="false" class="newCard" contenteditable="true">+ ADD NEW CARD</span>
@@ -55,8 +55,10 @@
             ADD NEW LIST
         </div>
     </div>
-    
+
 </div>
 </body>
-
+<div id="delme">
+  DELETE
+</div>
 </html>

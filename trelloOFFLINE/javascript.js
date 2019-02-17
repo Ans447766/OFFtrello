@@ -22,18 +22,26 @@ function drop(ev) {
         ev.target.appendChild(document.getElementById(data));
     }else if(ev.target.id.includes('list') && data.includes('list')){
         ev.target.before(document.getElementById(data));
+    }else if(ev.target.id.includes('div') && data.includes('list')){
+        var x = $(event.target).parent();
+        x.before(document.getElementById(data));
+    }else if(ev.target.id.includes('lhed') && data.includes('list')){
+        var x = $(event.target).parent();
+        x.before(document.getElementById(data));
+    }else if(ev.target.id.includes('card') && data.includes('list')){
+        var x = $(event.target).parent().parent();
+        x.before(document.getElementById(data));
     }else if(ev.target.id.includes('card') && data.includes('hed')){
         ev.target.before(document.getElementById(data));
     }else if(ev.target.id.includes('hed') && data.includes('hed')){
         ev.target.before(document.getElementById(data));
-    }
-    else if(ev.target.id.includes('delme')){
-        // remove(document.getElementById(data));
-        // document.getElementById("delme").css("bottom","-100px");
+    }else if(ev.target.id.includes('delme')){
+        document.getElementById(data).remove();
+        // console.log("executing");
     }
 }
 $(document).ready(function(){
-    //---------------ADD-ID'S-TO-ALL-ELEMENTS--------------------------   
+    //---------------ADD-ID'S-TO-ALL-ELEMENTS--------------------------
     // run through .list's
     $("div.list").each(function(idx,elem){
         $(elem).attr("id",`list${idx+1}`);
@@ -50,10 +58,14 @@ $(document).ready(function(){
     $(".mm h1").each(function(idx,elem){
         $(elem).attr("id",`hed${idx+1}`);
     });
+    // run through headings inside of list
+    $(".list h1").each(function(idx,elem){
+        $(elem).attr("id",`lhed${idx+1}`);
+    });
     //-----------------------------------------------------------------
-    
 
-    
+
+
     //for new card--------------------------------------------------------------------
     $("body").on('blur','span.newCard',function(){
         if(this.innerHTML != '' && this.innerHTML.charAt(0) != "#"){
@@ -141,7 +153,7 @@ $(document).ready(function(){
             $("span.card").each(function(idx,elem){
                 $(elem).attr("id",`card${idx+1}`);
             });
-            
+
             this.innerHTML.replace(/\n|\r/g,'').trim();
             this.innerHTML = "";
             return e.which != 13;
@@ -175,10 +187,10 @@ $(document).ready(function(){
         return e.which != 13;
     });
     //---------------------------------------------------------------------
-    
-    
-    
-    
+
+
+
+
     // for new list--------------------------------------------------------
     $('.nlist').on('blur',function(){
         if(this.innerHTML != ''){
@@ -193,6 +205,10 @@ $(document).ready(function(){
             });
             $("div.list").each(function(idx,elem){
                 $(elem).attr("id",`list${idx+1}`);
+            });
+            // run through headings inside of list
+            $(".list h1").each(function(idx,elem){
+                $(elem).attr("id",`lhed${idx+1}`);
             });
             this.innerHTML = "ADD NEW LIST";
         }else{
@@ -214,10 +230,14 @@ $(document).ready(function(){
             $("div.mm").each(function(idx,elem){
                 $(elem).attr("id",`div${idx+1}`);
             });
+            // run through headings inside of list
+            $(".list h1").each(function(idx,elem){
+                $(elem).attr("id",`lhed${idx+1}`);
+            });
             this.innerHTML = "";
-        }  
+        }
     }).on('keypress',function(e){return e.which != 13;});
-    
+
 });
 //-----------------------------------------------------------------------------------
 
@@ -233,4 +253,3 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
 }
-
