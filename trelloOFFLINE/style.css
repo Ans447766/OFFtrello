@@ -1,5 +1,5 @@
 body{
-    background-color: #795ca1;
+    background-color: #a2bdd3;
     font-family:monospace;
     font-size: 20px;
     overflow-x: scroll;
@@ -35,17 +35,13 @@ body{
     /* color:rgb(0, 174, 255); */
     outline:0px;
 }
-.bname:focus, h1:focus{
-    color:rgb(0, 174, 255);
-}
 .newCard:focus{
-    transition: 0.2s;
     color:rgb(254, 251, 255);
-    background-color: rgba(61, 1, 95, 0.918);
+    background-color: rgb(0, 105, 175);
 }
 h1{
     background-color:rgb(228, 228, 228);
-    color: rgba(88, 26, 124, 0.918);
+    color: rgb(0, 105, 175);
     font-size: 1.6em;
     font-weight: bold;
     top:0;
@@ -73,8 +69,7 @@ h1{
     text-transform: uppercase;
     display: inline-block;
     width:100%;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.582);
-    background-color: rgba(0, 0, 0, 0.158);
+    background-color: rgb(0, 105, 175);
     color:rgb(255, 255, 255);
 }
 .newCard{
@@ -98,7 +93,7 @@ h1{
 .list{
     overflow-x: hidden;
     width:331px;
-    /* border-top: 30px solid rgba(61, 1, 95, 0.918); */
+    border: 5px solid rgb(0, 105, 175);
     background-color: rgb(228, 228, 228);
     color:rgb(117, 117, 117);
     border-radius: 6px;
@@ -111,8 +106,8 @@ h1{
 .nlist{
     overflow-x: hidden;
     width:300px;
-    background-color: rgba(0, 0, 0, 0.521);
-    color:rgb(212, 212, 212);
+    background-color: rgba(0, 0, 0, 0);
+    color:rgb(0, 105, 175);
     border-radius: 10px;
     margin: 10px;
     text-align: center;
@@ -122,8 +117,12 @@ h1{
     float: left;
 }
 .nlist:hover{
-    background-color: black;
+    background-color: rgb(0, 105, 175);
     transition: 1s;
+    color:wheat;
+}
+.nlist:focus{
+    background-color: rgb(0, 105, 175);
     color:wheat;
 }
 .card{
@@ -135,8 +134,6 @@ h1{
     padding:10px 30px 10px 10px;
     border-radius: 5px;
 }
-.list:-webkit-scrollbar-track {
-}
 /* .list::-webkit-scrollbar {
     width:0.3em;
     background-color: rgba(61, 1, 95, 0);
@@ -146,12 +143,13 @@ h1{
     background-color: #62007591;
     border-radius: 50px;
 } */
-
+.meant{
+  margin-left: 331px;
+}
 
 .list::-webkit-scrollbar {
     width:0.18em;
-    background-color: rgba(61, 1, 95, 0.918);
-    border-radius:0px 0px 10px 0px;
+    background-color: rgb(0, 105, 175);
 }
 .list::-webkit-scrollbar-thumb{
     background-color: #E3E3E3;
@@ -180,12 +178,11 @@ body::-webkit-scrollbar-thumb{
     -ms-user-select: none;
 }
 .mm{
-    /* background-color: #0e009110; */
-    border-top:4px dashed rgba(128, 0, 128, 0.37);
-    border-bottom:4px dashed rgba(128, 0, 128, 0.37);
     padding:0px;
     padding-bottom:100px;
-    /* box-shadow: 0px 0px 30px #29008a1c; */
+    box-shadow: 2px 0px 30px #00578a1c;
+    background-color: #00638a0e;
+    margin: 20px 0px;
     min-height: 70px;
 }
 
