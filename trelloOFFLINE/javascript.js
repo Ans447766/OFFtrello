@@ -25,7 +25,7 @@ function drop(ev) {
     }else if(ev.target.id.includes('div') && data.includes('list')){
         var x = $(event.target).parent();
         x.before(document.getElementById(data));
-    }else if(ev.target.id.includes('lhed') && data.includes('list')){
+    }else if(ev.target.id.includes('hdl') && data.includes('list')){
         var x = $(event.target).parent();
         x.before(document.getElementById(data));
     }else if(ev.target.id.includes('card') && data.includes('list')){
