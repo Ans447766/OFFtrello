@@ -151,11 +151,11 @@ h1{
 }
 
 .list::-webkit-scrollbar {
-    width:0.18em;
+    width:0em;
     background-color: rgb(0, 105, 175);
 }
 .list::-webkit-scrollbar-thumb{
-    background-color: #E3E3E3;
+    background-color: rgb(196, 124, 255);
     /* border-radius: 50px; */
     transition: 1s;
 }
@@ -168,7 +168,7 @@ body::-webkit-scrollbar {
     height:0.5em;
  }
 body::-webkit-scrollbar-thumb{
-    background-color: #ffffffce;
+    background-color: rgb(0, 105, 175);
     border-radius: 10px;
 }
 [draggable="true"] {
@@ -185,7 +185,7 @@ body::-webkit-scrollbar-thumb{
     padding-bottom:100px;
     box-shadow: 2px 0px 30px #00578a1c;
     background-color: #00638a0e;
-    margin: 20px 0px;
+    margin: 0px 0px 40px 0px;
     min-height: 70px;
 }
 
