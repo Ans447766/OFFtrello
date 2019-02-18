@@ -33,6 +33,9 @@ function drop(ev) {
         x.before(document.getElementById(data));
     }else if(ev.target.id.includes('card') && data.includes('hed')){
         ev.target.before(document.getElementById(data));
+    }else if(ev.target.id.includes('card') && data.includes('hdl')){
+        var x = $(event.target).next();
+        x.append(document.getElementById(data));
     }else if(ev.target.id.includes('hed') && data.includes('hed')){
         ev.target.before(document.getElementById(data));
     }else if(ev.target.id.includes('delme')){
@@ -59,7 +62,7 @@ $(document).ready(function(){
     });
     // run through headings inside of list
     $(".list h1").each(function(idx,elem){
-        $(elem).attr("id",`lhed${idx+1}`);
+        $(elem).attr("id",`hdl${idx+1}`);
     });
     //-----------------------------------------------------------------
 
@@ -207,7 +210,7 @@ $(document).ready(function(){
             });
             // run through headings inside of list
             $(".list h1").each(function(idx,elem){
-                $(elem).attr("id",`lhed${idx+1}`);
+                $(elem).attr("id",`hdl${idx+1}`);
             });
             this.innerHTML = "ADD NEW LIST";
         }else{
@@ -231,7 +234,7 @@ $(document).ready(function(){
             });
             // run through headings inside of list
             $(".list h1").each(function(idx,elem){
-                $(elem).attr("id",`lhed${idx+1}`);
+                $(elem).attr("id",`hdl${idx+1}`);
             });
             this.innerHTML = "";
         }
