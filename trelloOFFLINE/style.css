@@ -51,8 +51,6 @@ h1{
     padding: 5px 20px;
 }
 .mm h1{
-    border-top:2px solid rgb(228, 228, 228);
-    border-bottom:2px solid rgb(228, 228, 228);
     font-size: 1.1em;
     top:47px;
     box-sizing: border-box;
