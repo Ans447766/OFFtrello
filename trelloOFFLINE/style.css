@@ -183,7 +183,7 @@ body::-webkit-scrollbar-thumb{
 .mm{
     padding:0px;
     padding-bottom:100px;
-    box-shadow: 2px 0px 30px #00578a1c;
+    box-shadow: 2px 0px 50px #00578a1c;
     background-color: #00638a0e;
     margin: 0px 0px 40px 0px;
     min-height: 70px;
