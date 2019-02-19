@@ -8,7 +8,7 @@ TODO'S
     . snap scrolling verticle on lists
     . delete button
     . + add card/heading buttons
-    . 
+    . auto cards coloring sentance and word based
 
 COMPLETED'S
     . list drag and drop error to be resolved of border top.
