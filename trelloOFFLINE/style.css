@@ -37,11 +37,11 @@ body{
 }
 .newCard:focus{
     color:rgb(254, 251, 255);
-    background-color: rgb(0, 105, 175);
+    background-color: rgb(0, 132, 194);
 }
 h1{
     background-color:rgb(228, 228, 228);
-    color: rgb(0, 105, 175);
+    color: rgb(0, 132, 194);
     font-size: 1.6em;
     font-weight: bold;
     top:0;
@@ -91,7 +91,7 @@ h1{
 .list{
     overflow-x: hidden;
     width:331px;
-    /* border: 5px solid rgb(0, 105, 175); */
+    /* border: 5px solid rgb(0, 132, 194); */
     background-color: rgb(228, 228, 228);
     color:rgb(117, 117, 117);
     border-radius: 6px;
@@ -105,11 +105,11 @@ h1{
     overflow-x: hidden;
     width:300px;
     background-color: rgb(228, 228, 228);
-    color:rgb(0, 105, 175);
+    color:rgb(0, 132, 194);
     border-radius: 5px;
     font-weight: bold;
     font-family: monospace;
-    /* border:5px solid rgb(0, 105, 175); */
+    /* border:5px solid rgb(0, 132, 194); */
     margin: 4px;
     text-align: center;
     padding:10px;
@@ -150,11 +150,13 @@ h1{
 
 .list::-webkit-scrollbar {
     width:0em;
-    background-color: rgb(0, 105, 175);
+    position: fixed;
+    left: 0px;
+    background-color: rgba(194, 194, 194, 0);
 }
 .list::-webkit-scrollbar-thumb{
-    background-color: rgb(196, 124, 255);
-    /* border-radius: 50px; */
+    background-color: rgb(138, 138, 138);
+    border-radius: 50px;
     transition: 1s;
 }
 .list::-webkit-scrollbar-thumb:hover{
@@ -166,7 +168,7 @@ body::-webkit-scrollbar {
     height:0.5em;
  }
 body::-webkit-scrollbar-thumb{
-    background-color: rgb(0, 105, 175);
+    background-color: rgb(0, 132, 194);
     /* border-radius: 10px; */
 }
 [draggable="true"] {
@@ -206,7 +208,7 @@ body::-webkit-scrollbar-thumb{
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: rgb(0, 105, 175); /* Black*/
+    background-color: rgb(0, 132, 194); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
