@@ -1,4 +1,4 @@
-/* CLASSES FOR CARDS AND HEADING STYLING */
+/* CLASSES FORspanAND HEADING STYLING */
 .bgr{
     background-color:#4CAF50 ;
     color: white;
@@ -12,8 +12,8 @@
     color: white;
 }
 .bpr{
-    background-color:rgba(88, 26, 124, 0.918) ;
-    color: white;
+    background-color:rgba(95, 0, 150) ;
+    color: rgb(255, 255, 255);
 }
 .brd{
     background-color:#F44336 ;
@@ -56,8 +56,8 @@
 }
 .brpr{
     background-color:white;
-    border-left:10px solid rgba(88, 26, 124, 0.918) ;
-    color: rgba(88, 26, 124, 0.918);
+    border-left:10px solid rgba(88, 26, 124) ;
+    color: rgba(88, 26, 124);
 }
 .brrd{
     background-color:white;
@@ -71,8 +71,8 @@
 }
 .brlo{
     background-color:white;
-    border-left:10px solid #FFECB3 ;
-    color: #F57C00;
+    border-left:10px solid rgb(255, 191, 0) ;
+    color: rgb(255, 191, 0) ;
 }
 .brlb{
     background-color:white;
