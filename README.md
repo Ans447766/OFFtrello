@@ -1,7 +1,7 @@
 # OFFLINE-TRELLO
-trello offline 
+TRELLO OFFLINE 
 
-![SCREENSHOT](https://github.com/Ans447766/OFFtrello/blob/master/ShowRoom/Screenshot%20from%202019-02-18%2014-39-44.png)
+![SCREENSHOT](https://github.com/Ans447766/OFFtrello/blob/master/ShowRoom/ONE.png)
 -------------------------------------------------------------------
 TODO'S
     . snap scrolling verticle on lists.
