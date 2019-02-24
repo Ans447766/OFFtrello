@@ -78,11 +78,11 @@ $(document).ready(function(){
             $(span).attr("draggable","true");
             $(span).attr("spellcheck","false");
             $(span).attr("ondragstart","drag(event)");
-            if(this.innerHTML.includes('*' && ',')){
+            if(this.innerHTML.includes('*' && '.')){
                 var innerText = this.innerHTML;
                 var val = innerText.split('*');
                 span.innerHTML = val[0];
-                var starr = val[1].split(',');
+                var starr = val[1].split('.');
                 for (let index = 0; index < 2; index++) {
                     var classname = starr[index];
                     console.log(classname);
@@ -104,11 +104,11 @@ $(document).ready(function(){
             $(h1).attr("draggable","true");
             $(h1).attr("spellcheck","false");
             $(h1).attr("ondragstart","drag(event)");
-            if(this.innerHTML.includes('*' && ',')){
+            if(this.innerHTML.includes('*' && '.')){
                 var innerText = this.innerHTML;
                 var val = innerText.split('*');
                 h1.innerHTML = val[0].substring(1,this.innerHTML.length);
-                var starr = val[1].split(',');
+                var starr = val[1].split('.');
                 for (let index = 0; index < 2; index++) {
                     var classname = starr[index];
                     console.log(classname);
@@ -137,11 +137,11 @@ $(document).ready(function(){
             $(span).attr("draggable","true");
             $(span).attr("spellcheck","false");
             $(span).attr("ondragstart","drag(event)");
-            if(this.innerHTML.includes('*' && ',')){
+            if(this.innerHTML.includes('*' && '.')){
                 var innerText = this.innerHTML.trim().replace(/\n|\r/g,'');
                 var val = innerText.split('*');
                 span.innerHTML = val[0];
-                var starr = val[1].split(',');
+                var starr = val[1].split('.');
                 for (let index = 0; index < 2; index++) {
                     var classname = starr[index];
                     console.log(classname);
@@ -166,11 +166,11 @@ $(document).ready(function(){
             $(h1).attr("draggable","true");
             $(h1).attr("spellcheck","false");
             $(h1).attr("ondragstart","drag(event)");
-            if(this.innerHTML.includes('*' && ',')){
+            if(this.innerHTML.includes('*' && '.')){
                 var innerText = this.innerHTML;
                 var val = innerText.split('*');
                 h1.innerHTML = val[0].substring(1,this.innerHTML.length);
-                var starr = val[1].split(',');
+                var starr = val[1].split('.');
                 for (let index = 0; index < 2; index++) {
                     var classname = starr[index];
                     console.log(classname);
