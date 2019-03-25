@@ -1,8 +1,8 @@
 * {
     -webkit-user-select: none;
     user-select: none;
+    -webkit-user-modify:read-write;
 }
-
 input,
 textarea,
 [contenteditable] {
