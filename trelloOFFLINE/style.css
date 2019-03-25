@@ -59,6 +59,7 @@ h1{
     text-transform: uppercase;
     width:88%;
     position: sticky;
+    position: -webkit-sticky;
     padding: 5px 20px;
 }
 .mm h1{
@@ -68,6 +69,7 @@ h1{
     text-transform: uppercase;
     width:100%;
     position: sticky;
+    position: -webkit-sticky;
     padding: 10px 20px;
 }
 .bname{
@@ -90,6 +92,7 @@ h1{
     display: block;
     text-align: left;
     position: sticky;
+    position: -webkit-sticky;
     padding: 10px 10px 10px 30px;
     background-color: rgb(228, 228, 228);
 }
