@@ -1,14 +1,3 @@
-* {
-    -webkit-user-select: none;
-    user-select: none;
-    -webkit-user-modify:read-write;
-}
-input,
-textarea,
-[contenteditable] {
-    -webkit-user-select: text;
-    user-select: text;
-}
 body{
     background-color: #a2bdd3;
     font-family:monospace;
